@@ -10,27 +10,27 @@ Library Project – Actionable Goals
 
     Create a Book constructor to define book objects with:
 
-        id (use crypto.randomUUID())
+        id (use crypto.randomUUID()) ✅
 
-        title
+        title ✅
 
-        author
+        author ✅
 
-        pages
+        pages ✅
 
-        read status (boolean)
+        read status (boolean) ✅
 
-        any other desired properties
+        any other desired properties ✅
 
-        Create an array to store books: const myLibrary = [];.
+        Create an array to store books: const myLibrary = [];. ✅
 
-        Implement a separate function addBookToLibrary() that:
+        Implement a separate function addBookToLibrary() that: ✅
 
-        Takes input parameters
+        Takes input parameters ✅
 
-        Creates a Book object
+        Creates a Book object ✅
 
-        Pushes it into myLibrary
+        Pushes it into myLibrary ✅
 
 3. Display Books
 
