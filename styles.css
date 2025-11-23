@@ -185,3 +185,103 @@ html, body {
   color: var(--text-dark);
 }
 
+/* ===============================
+   FORM
+================================== */
+
+/* Container for the form */
+.new-book-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--parchment-darkest);
+    border: 2px solid var(--text-dark);
+    padding: 20px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px var(--shadow-color);
+    width: 40vw;
+    z-index: 100;
+}
+
+/* Form header: h2 left, close icon right */
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-header h2 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: var(--text-dark);
+}
+
+.form-header i.close-form {
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.form-header i.close-form:hover {
+    color: var(--text-darker);
+    font-size: 1.8rem;
+}
+
+/* Inputs container */
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Each input line */
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-group label {
+    flex: 1;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.form-group input,
+.form-group select {
+    flex: 2;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    background-color: var(--parchment-lightest);
+    color: var(--text-dark);
+}
+
+/* Submit button */
+button.submit-btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--text-darker);
+    background-color: var(--parchment);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s ease;
+
+    /* Remove default shadow / focus outline */
+    box-shadow: none;
+    outline: none;
+    border: none; /* optional if you don't want the border */
+}
+
+
+button.submit-btn:hover {
+    background-color: var(--text-dark);
+    color: var(--parchment);
+}

@@ -95,3 +95,32 @@ addBookToLibrary(book10);
 
 
 displayBooks();
+
+// ---------------------- //
+// Form Shit //
+// ---------------------- //
+
+const addBookBtn = document.querySelector("#add");
+const form = document.querySelector(".new-book-form");
+
+addBookBtn.addEventListener("click", function(e) {
+    e.preventDefault();
+
+    if (form.style.display === "block") {
+        form.style.display = "none";
+    } else {
+        form.style.display = "block";
+    }
+});
+
+const closeFormBtn = document.querySelector(".close-form");
+
+closeFormBtn.addEventListener("click", function(e) {
+    e.preventDefault();
+
+    if (form.style.display === "block") {
+        form.style.display = "none";
+    } else {
+        form.style.display = "block";
+    }
+});

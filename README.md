@@ -34,11 +34,11 @@ Library Project – Actionable Goals
 
 3. Display Books
 
-    Write a function to loop through myLibrary and render books on the page.
+    Write a function to loop through myLibrary and render books on the page. ✅
 
-    Decide on a layout: cards, table, or grid.
+    Decide on a layout: cards, table, or grid. ✅
 
-    Include at least a few manual books to test display.
+    Include at least a few manual books to test display. ✅
 
 4. Interactive Elements
 
