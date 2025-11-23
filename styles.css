@@ -124,4 +124,64 @@ html, body {
 .content {
     background-color: var(--parchment-dark);
     padding: 20px;
+
+    /* Scroll if content overflows */
+    max-height: calc(100vh - 100px); /* or any height you want */
+    overflow-y: auto; /* vertical scroll */
 }
+
+/* Container for each book card */
+.book {
+  display: flex;
+  background-color: var(--parchment-light); /* parchment-like */
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 1rem 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.book:hover {
+    transform: translateY(-3px);
+}
+
+/* Active click effect */
+.book:active {
+    transform: translateY(0);
+}
+
+/* Left side of the card */
+.book-left {
+  background-color: var(--parchment); /* slightly darker parchment */
+  border-left: 6px solid var(--text-dark); /* dark accent border */
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 150px;
+  width: 30%;
+}
+
+/* Book title */
+.book-left .book-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+  color: var(--text-dark); /* dark brown text */
+}
+
+/* Right side of the card */
+.book-right {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Book info text */
+.book-right .book-info {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+  color: var(--text-dark);
+}
+
