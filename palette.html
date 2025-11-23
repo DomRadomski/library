@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Color Palette</title>
+  <style>
+    :root {
+      --parchment-light: #F7F1E5;
+      --parchment: #E8DCC3;
+      --parchment-dark: #D5C4A1;
+      --parchment-lightest: #FBF8F1;
+      --parchment-darkest: #B8A480;
+
+      --text-dark: #4A2E14;
+      --text-darker: #2E1A0A;
+      --text-muted: #6C584C;
+
+      --accent-gold: #C19A43;
+      --accent-gold-light: #D8B76A;
+      --accent-gold-dark: #9E7C32;
+
+      --accent-sage: #A3B18A;
+      --accent-sage-light: #B9C8A6;
+      --accent-sage-dark: #738164;
+
+      --accent-burgundy: #6A2E2A;
+      --accent-burgundy-light: #8B4A45;
+      --accent-burgundy-dark: #431A17;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: var(--parchment-lightest);
+      padding: 20px;
+      color: var(--text-darker);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .section-title {
+      margin-top: 40px;
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+
+    .palette-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+    }
+
+    .swatch {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      text-align: center;
+    }
+
+    .color-box {
+      height: 100px;
+      width: 100%;
+    }
+
+    .label {
+      padding: 10px;
+      background: white;
+      font-size: 0.9rem;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Library Theme Color Palette</h1>
+
+  <div class="section-title">Parchment Colors</div>
+  <div class="palette-grid">
+    <div class="swatch"><div class="color-box" style="background: var(--parchment-lightest);"></div><div class="label">parchment-lightest</div></div>
+    <div class="swatch"><div class="color-box" style="background: var(--parchment-light);"></div><div class="label">parchment-light</div></div>
+    <div class="swatch"><div class="color-box" style="background: var(--parchment);"></div><div class="label">parchment</div></div>
+    <div class="swatch"><div class="color-box" style="background: var(--parchment-dark);"></div><div class="label">parchment-dark</div></div>
+    <div class="swatch"><div class="color-box" style="background: var(--parchment-darkest);"></div><div class="label">parchment-darkest</div></div>
+  </div>
+
+  <div class="section-title">Text Colors</div>
+  <div class="palette-grid">
+    <div class="swatch"><div class="color-box" style="background: var(--text-dark);"></div><div class="label">text-dark</div></div>
+    <div class="swatch"><div class="color-box" style="background: var(--text-darker);"></div><div class="label">text-darker</div></div>
+    <div class="swatch"><div class="color-box" style="background: var(--text-muted);"></div><div class="label">text-muted</div></div>
+  </div>
+
+  <div class="section-title">Gold Accents</div>
+  <div class="palette-grid">
+    <div class="swatch"><div class="color-box" style="background: var(--accent-gold-light);"></div><div class="label">gold-light</div></div>
+    <div class="swatch"><div class="color-box" style="background: var(--accent-gold);"></div><div class="label">gold</div></div>
+    <div class="swatch"><div class="color-box" style="background: var(--accent-gold-dark);"></div><div class="label">gold-dark</div></div>
+  </div>
+
+  <div class="section-title">Sage Accents</div>
+  <div class="palette-grid">
+    <div class="swatch"><div class="color-box" style="background: var(--accent-sage-light);"></div><div class="label">sage-light</div></div>
+    <div class="swatch"><div class="color-box" style="background: var(--accent-sage);"></div><div class="label">sage</div></div>
+    <div class="swatch"><div class="color-box" style="background: var(--accent-sage-dark);"></div><div class="label">sage-dark</div></div>
+  </div>
+
+  <div class="section-title">Burgundy Accents</div>
+  <div class="palette-grid">
+    <div class="swatch"><div class="color-box" style="background: var(--accent-burgundy-light);"></div><div class="label">burgundy-light</div></div>
+    <div class="swatch"><div class="color-box" style="background: var(--accent-burgundy);"></div><div class="label">burgundy</div></div>
+    <div class="swatch"><div class="color-box" style="background: var(--accent-burgundy-dark);"></div><div class="label">burgundy-dark</div></div>
+  </div>
+
+</body>
+</html>
