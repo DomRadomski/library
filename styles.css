@@ -138,16 +138,58 @@ html, body {
   overflow: hidden;
   margin: 1rem 0;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  position: relative; 
 }
+
+.delete-book {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 1.2rem;
+    color: var(--text-dark);
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.delete-book:hover {
+    color: var(--text-darker);
+    transform: scale(1.1);
+}
+
+.toggle-read-btn {
+    margin-top: 10px;
+    padding: 6px 12px;
+
+    /* Typography */
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--text-darker);
+
+    /* Visual style */
+    background-color: var(--parchment-light);
+    border: 1px solid var(--text-dark);
+    border-radius: 6px;
+    cursor: pointer;
+
+    /* Smooth animation */
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Hover state */
+.toggle-read-btn:hover {
+    background-color: var(--parchment);
+}
+
+/* Click / active state */
+.toggle-read-btn:active {
+    transform: scale(0.97);
+}
+
 
 .book:hover {
     transform: translateY(-3px);
 }
 
-/* Active click effect */
-.book:active {
-    transform: translateY(0);
-}
 
 /* Left side of the card */
 .book-left {
